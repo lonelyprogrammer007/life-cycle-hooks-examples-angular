@@ -22,7 +22,7 @@ import {
       <div class="info">
         <peek-a-boo *ngIf="hasChild" [name]="heroName"></peek-a-boo>
 
-        <h3>Open the console and see the changes!!</h3>
+        <h3>Open the //console and see the changes!!</h3>
       </div>
     </div>
   `,
@@ -50,14 +50,14 @@ export class PeekABooParentComponent
   }
 
   ngDoCheck() {
-    console.error("ngDoCheck() - PADRE");
+    //console.error("ngDoCheck() - PADRE");
   }
 
   ngAfterContentChecked() {
-    console.error("ngAfterContentChecked() - PADRE");
+    //console.error("ngAfterContentChecked() - PADRE");
   }
 
   ngAfterViewChecked() {
-    console.error("ngAfterViewChecked() - PADRE");
+    //console.error("ngAfterViewChecked() - PADRE");
   }
 }

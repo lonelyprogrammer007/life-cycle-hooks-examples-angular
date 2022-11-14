@@ -40,7 +40,7 @@ export class PeekABooComponent
     this.name = "";
     this.verb = "initialized";
 
-    console.warn("construtor() - HIJO");
+    //console.warn("construtor() - HIJO");
   }
 
   // only called for/if there is an @input variable set by parent.
@@ -55,38 +55,36 @@ export class PeekABooComponent
       }
     }
     this.verb = "changed"; // next time it will be a change
-    console.warn("ngOnChanges() - HIJO");
+    //console.warn("ngOnChanges() - HIJO");
   }
 
   // Beware! Called frequently!
   // Called in every change detection cycle anywhere on the page
   ngDoCheck() {
-    console.warn("ngDoCheck() - HIJO");
+    //console.warn("ngDoCheck() - HIJO");
   }
 
   ngAfterContentInit() {
-    console.warn("ngAfterContentInit() - HIJO");
+    //console.warn("ngAfterContentInit() - HIJO");
   }
 
   // Beware! Called frequently!
   // Called in every change detection cycle anywhere on the page
   ngAfterContentChecked() {
-    console.warn("ngAfterContentChecked() - HIJO");
+    //console.warn("ngAfterContentChecked() - HIJO");
   }
 
   ngAfterViewInit() {
-    console.warn("ngAfterViewInit() - HIJO");
+    //console.warn("ngAfterViewInit() - HIJO");
   }
 
   // Beware! Called frequently!
   // Called in every change detection cycle anywhere on the page
   ngAfterViewChecked() {
-    console.warn("ngAfterViewChecked() - HIJO");
+    //console.warn("ngAfterViewChecked() - HIJO");
   }
 
   ngOnDestroy() {
-    console.warn("ngOnDestroy() - HIJO");
+    //console.warn("ngOnDestroy() - HIJO");
   }
 }
-
-
