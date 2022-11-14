@@ -1,7 +1,5 @@
 import { Component } from "@angular/core";
 
-import { LoggerService } from "./logger.service";
-
 @Component({
   selector: "counter-parent",
   template: `
@@ -13,40 +11,20 @@ import { LoggerService } from "./logger.service";
 
       <app-counter [counter]="value"></app-counter>
     </div>
-
-    <!-- <div class="info">
-      <h3>Spy Lifecycle Hook Log</h3>
-      <div *ngFor="let msg of spyLog" class="log">{{ msg }}</div>
-    </div> -->
   `,
-  providers: [LoggerService],
 })
 export class CounterParentComponent {
   value = 0;
-  // spyLog: string[] = [];
 
-  // private logger: LoggerService;
-
-  constructor(logger: LoggerService) {
-    // this.logger = logger;
-    // this.spyLog = logger.logs;
+  constructor() {
     this.reset();
   }
 
   updateCounter() {
     this.value += 1;
-    // this.logger.tick();
   }
 
   reset() {
-    // this.logger.log("reset");
     this.value = 0;
-    // this.logger.tick();
   }
 }
-
-/*
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at https://angular.io/license
-*/
